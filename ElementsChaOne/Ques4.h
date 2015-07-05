@@ -8,4 +8,4 @@
 #include <stdio.h>
 #include "Ques1.h"
 
-unsigned findClosest(unsigned theNumber);
+unsigned findClose(unsigned theNumber);

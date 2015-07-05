@@ -13,6 +13,7 @@
 		E76DD2991B47BB8400C2FDE5 /* Ques5.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E76DD2971B47BB8400C2FDE5 /* Ques5.cpp */; };
 		E7B4336B1B45101D0000ED42 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E7B4336A1B45101D0000ED42 /* main.cpp */; };
 		E7B433731B4510570000ED42 /* Ques1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E7B433711B4510570000ED42 /* Ques1.cpp */; };
+		E7DE44501B492A5400F0193E /* Ques6.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E7DE444E1B492A5400F0193E /* Ques6.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -40,6 +41,8 @@
 		E7B4336A1B45101D0000ED42 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		E7B433711B4510570000ED42 /* Ques1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Ques1.cpp; sourceTree = "<group>"; };
 		E7B433721B4510570000ED42 /* Ques1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ques1.h; sourceTree = "<group>"; };
+		E7DE444E1B492A5400F0193E /* Ques6.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Ques6.cpp; sourceTree = "<group>"; };
+		E7DE444F1B492A5400F0193E /* Ques6.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ques6.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +80,8 @@
 				E76DD2951B47757400C2FDE5 /* Ques4.h */,
 				E7B433711B4510570000ED42 /* Ques1.cpp */,
 				E7B433721B4510570000ED42 /* Ques1.h */,
+				E7DE444E1B492A5400F0193E /* Ques6.cpp */,
+				E7DE444F1B492A5400F0193E /* Ques6.h */,
 				E76DD28E1B4749D100C2FDE5 /* Ques2.cpp */,
 				E76DD28F1B4749D100C2FDE5 /* Ques2.h */,
 				E76DD2911B47675A00C2FDE5 /* Ques3.cpp */,
@@ -149,6 +154,7 @@
 				E76DD2991B47BB8400C2FDE5 /* Ques5.cpp in Sources */,
 				E7B433731B4510570000ED42 /* Ques1.cpp in Sources */,
 				E76DD2931B47675A00C2FDE5 /* Ques3.cpp in Sources */,
+				E7DE44501B492A5400F0193E /* Ques6.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

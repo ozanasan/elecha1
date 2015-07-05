@@ -13,6 +13,7 @@
 #include "Ques3.h"
 #include "Ques4.h"
 #include "Ques5.h"
+#include "Ques6.h"
 
 //this is for helping to visualise 64 bits representation of a number.
 void print64Bits(uint64_t numberToBePrinted){
@@ -65,9 +66,9 @@ bool testForQuestionThree(){
 }
 
 bool testForQuestionFour(){
-    unsigned testNumber = 15; assert(findClosest(testNumber) == 23);
-    testNumber = 2; assert(findClosest(testNumber) == 1);
-    testNumber = 5; assert(findClosest(testNumber) == 6);
+    unsigned testNumber = 15; assert(findClose(testNumber) == 23);
+    testNumber = 2; assert(findClose(testNumber) == 1);
+    testNumber = 5; assert(findClose(testNumber) == 6);
     return true;
 }
 
@@ -77,6 +78,20 @@ bool testForQuestionFive(){
     assert(multiplyInHardTimes(5, 30) == 150);
     assert(multiplyInHardTimes(11, 11) == 121);
     assert(multiplyInHardTimes(5555, 0) == 0);
+    return true;
+}
+
+bool testForQuestionSix(){
+    assert(recursiveFound(6, 3) == 2);
+    assert(recursiveFound(17, 4) == 4);
+    assert(recursiveFound(31, 7) == 4);
+    assert(recursiveFound(32, 8) == 4);
+    assert(recursiveFound(64, 3) == 21);
+    assert(recursiveFound(10000, 2) == 5000);
+    assert(recursiveFound(10001, 2) == 5000);
+    assert(recursiveFound(4999, 5000) == 0);
+    assert(recursiveFound(5001, 5000) == 1);
+    assert(recursiveFound(1, 1) == 1);
     return true;
 }
 
@@ -95,6 +110,9 @@ int main(int argc, const char * argv[]) {
     
     testForQuestionFive();
     std::cout << "Question Five looks okay." << std::endl;
+    
+    testForQuestionSix();
+    std::cout << "Question Six looks okay." << std::endl;
     
     return 0;
 }
