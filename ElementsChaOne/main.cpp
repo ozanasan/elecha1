@@ -14,6 +14,15 @@
 #include "Ques4.h"
 #include "Ques5.h"
 #include "Ques6.h"
+#include "Ques7.h"
+#include "Ques8.h"
+#include "Ques9.h" //not working now.
+#include "Ques10.h"
+#include "Ques11.h"
+#include "Ques12.h" //not working for now.
+#include "Ques13.h"
+#include "Ques14.h" //not working now.
+#include "Ques15.h"
 
 //this is for helping to visualise 64 bits representation of a number.
 void print64Bits(uint64_t numberToBePrinted){
@@ -95,6 +104,63 @@ bool testForQuestionSix(){
     return true;
 }
 
+bool testForQuestionSeven(){
+    assert(exponent(3, 4) == 81);
+    assert(exponent(10, 3) == 1000);
+    assert(exponent(5, 0) == 1);
+    assert(exponent(6, 2) == 36);
+    assert(exponent(117, 1) == 117);
+    assert(exponent(5, 3) == 125);
+    return true;
+}
+
+bool testForQuestionEight(){
+    //will do tests
+    return true;
+}
+
+bool testForQuestionTen(){
+    assert(reverseNumber(1234) == 4321);
+    assert(reverseNumber(12) == 21);
+    assert(reverseNumber(50) == 5);
+    assert(reverseNumber(-162) == -261);
+    assert(reverseNumber(1171) == 1711);
+    assert(reverseNumber(5333) == 3335);
+    return true;
+}
+
+bool testForQuestionEleven(){
+    assert(isPalindrome(121));
+    assert(isPalindrome(4224));
+    assert(!isPalindrome(445));
+    assert(!isPalindrome(12));
+    assert(!isPalindrome(-878));
+    assert(!isPalindrome(2));
+    return true;
+}
+
+bool testForQuestionTwelve(){
+    return true;
+}
+
+bool testForQuestionThirteen(){
+    struct rectangle rectangleOne;
+    struct rectangle rectangleTwo;
+    rectangleOne.x = 0; rectangleOne.y = 0; rectangleOne.width = 5; rectangleOne.height = 3;
+    rectangleTwo.x = 2; rectangleTwo.y = 2; rectangleTwo.width = 5; rectangleTwo.height = 7;
+    assert(doTheyIntersect(rectangleOne, rectangleTwo));
+    rectangleTwo.x = 10; rectangleTwo.y = 11; rectangleTwo.width = 5; rectangleTwo.height = 7;
+    assert(!doTheyIntersect(rectangleOne, rectangleTwo));
+    return true;
+}
+
+bool testForQuestionFifteen(){
+    assert(findGCD(15, 10) == 5);
+    assert(findGCD(100, 30) == 10);
+    assert(findGCD(75, 25) == 25);
+    return true;
+}
+
 int main(int argc, const char * argv[]) {
     testForQuestionOne();
     std::cout << "Question One looks okay." << std::endl;
@@ -113,6 +179,27 @@ int main(int argc, const char * argv[]) {
     
     testForQuestionSix();
     std::cout << "Question Six looks okay." << std::endl;
+    
+    testForQuestionSeven();
+    std::cout << "Question Seven looks okay." << std::endl;
+    
+    testForQuestionEight();
+    std::cout << "Question Eight looks okay." << std::endl;
+    
+    testForQuestionTen();
+    std::cout << "Question Ten looks okay." << std::endl;
+    
+    testForQuestionEleven();
+    std::cout << "Question Eleven looks okay." << std::endl;
+    
+    testForQuestionTwelve();
+    std::cout << "Question Twelve looks okay." << std::endl;
+    
+    testForQuestionThirteen();
+    std::cout << "Question Thirteen looks okay." << std::endl;
+    
+    testForQuestionFifteen();
+    std::cout << "Question Fifteen looks okay." << std::endl;
     
     return 0;
 }
